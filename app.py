@@ -7,26 +7,18 @@ import traceback
 # App Configuration
 # -----------------------------
 st.set_page_config(
-    page_title="NewsGuard AI",
+    page_title="NewsCheck AI",
     page_icon="📰",
     layout="wide"
 )
 
-st.title("📰 NewsGuard AI")
+st.title("📰 NewsCheck AI")
 st.caption("Empowering readers with AI-driven news credibility analysis")
 
 st.markdown(
     """
-    **Welcome!**  
-    Paste any news article below and our AI models will analyze it for:
-    - 🧩 **Topic Classification**  
-    - ⚠️ **Fake News Detection**  
-    - 💬 **Sentiment Analysis**  
-    - 🎯 **Clickbait Detection**  
-    - 🧠 **Bias Detection**  
-    - ✂️ **Summarization**  
-    - ❤️ **Emotion Detection**  
-    """
+    **Welcome!** Paste any news article below and our AI models will analyze it for:
+    - 🧩 **Topic Classification** - ⚠️ **Fake News Detection** - 💬 **Sentiment Analysis** - 🎯 **Clickbait Detection** - 🧠 **Bias Detection** - ✂️ **Summarization** - ❤️ **Emotion Detection** """
 )
 
 # -----------------------------
@@ -101,7 +93,7 @@ if st.button("🔍 Analyze Article", use_container_width=True):
         # RIGHT COLUMN MODELS
         with col2:
             if show_clickbait:
-                headline = text.strip().split("\\n")[0]
+                headline = text.strip().split("\n")[0]
                 res = safe_import_and_call("model_functions.clickbait", "is_clickbait", headline)
                 display_card("Clickbait Detection", res, "🎯")
 
@@ -126,9 +118,9 @@ st.markdown(
     """
     <hr>
     <small>
-    © 2025 NewsGuard AI Team — Licensed under the Apache License 2.0.  
+    © 2025 NewsCheck AI Team — Licensed under the Apache License 2.0.  
     Contribute or fork at 
-    <a href="https://github.com/Nwokike/newsguard-ai" target="_blank">github.com/Nwokike/newsguard-ai</a>.
+    <a href="https://github.com/Nwokike/newscheck-ai" target="_blank">github.com/Nwokike/newscheck-ai</a>.
     </small>
     """,
     unsafe_allow_html=True,
