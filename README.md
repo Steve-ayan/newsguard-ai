@@ -1,7 +1,7 @@
-# 📰 NewsGuard AI
+# 📰 NewsCheck AI
 
 Streamlit app to analyze news articles for credibility, sentiment, clickbait, and more.
-🔗 **Live App**: [https://newsguard-ai.streamlit.app/](https://newsguard-ai.streamlit.app/)
+🔗 **Live App**: [https://newscheck-ai.streamlit.app/](https://newscheck-ai.streamlit.app/)
 
 -----
 
@@ -16,14 +16,14 @@ Streamlit app to analyze news articles for credibility, sentiment, clickbait, an
 
 ## 📘 Project Overview
 
-**NewsGuard AI** is a modular NLP project built with Streamlit. Each team member contributed a trained model that analyzes different aspects of news articles. Incomplete modules display as “Coming Soon.”
+**NewsCheck AI** is a modular NLP project built with Streamlit. Each team member contributed a trained model that analyzes different aspects of news articles. Incomplete modules display as “Coming Soon.”
 
 -----
 
 ## 📁 Project Structure
 
 ```
-newsguard-ai/
+newscheck-ai/
 │
 ├── app.py
 │
@@ -120,7 +120,7 @@ This is the official list of datasets for the project. Contributors working on a
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/Nwokike/newsguard-ai.git
+    git clone https://github.com/Nwokike/newscheck-ai.git
     ```
 2.  Navigate to the directory:
     ```bash
